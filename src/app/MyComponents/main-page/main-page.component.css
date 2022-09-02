@@ -1,3 +1,175 @@
-.carousel-item > img{
-    /* min-height: 50vh; */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+
+/*** Header ***/
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary);
+  border: 10px solid var(--primary);
+  border-radius: 3rem;
+}
+
+@media (max-width: 768px) {
+  #header-carousel .carousel-item {
+      position: relative;
+      min-height: 450px;
+  }
+
+  #header-carousel .carousel-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+.page-header {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  background: url(../../../assets/mainpage/carousel-1.jpg) top right no-repeat;
+  background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #999999;
+}
+
+
+/*** Section Header ***/
+.section-header {
+  position: relative;
+  margin-bottom: 70px !important;
+}
+
+.btn {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-secondary:hover {
+  color: #FFFFFF;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.btn-primary{
+  background-color: var(--primary);
+  border-color:var(--primary);
+}
+
+.btn-secondary{
+  background-color:var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-primary:hover{
+  background-color:var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover{
+  background-color: var(--primary);
+  border-color:var(--primary);
+}
+
+.slideInDown{
+  color: var(--dark);
+  font-family: 'Lora';
+  font-weight: bold;
+}
+
+
+/*** About ***/
+.about-img img {
+  position: relative;
+  z-index: 2;
+}
+
+.about-title{
+  font-family: 'Lora';
+  font-weight: bold;
+}
+
+.bg-icon {
+  background: url(../../../assets/Features/bg3.jpg) center center repeat;
+  background-size: contain;
+}
+
+.serv-title{
+  font-family: 'Lora';
+  font-weight: bold;
+}
+
+.ser-btn{
+  background-color: #daffdc;
+  border: #daffdc;
+  color: var(--dark) !important;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 15px 46px !important;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fadeInUp:hover > .box{
+  border: 3px solid var(--secondary);
+  transition: all .0s ease-in-out;
+}
+
+.fadeInUp:hover > .box > .ser-btn{
+  background-color: #EF8829;
+  border: #EF8829;
+  color: var(--light) !important;
+
+}
+
