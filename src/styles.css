@@ -47,6 +47,16 @@ html {
   padding-bottom: 6rem;
 }
 
+.py-7{
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+
+.pb-6{
+  padding-bottom: 6rem;
+}
+
+
 .btn {
   font-weight: 500;
   transition: .5s;
