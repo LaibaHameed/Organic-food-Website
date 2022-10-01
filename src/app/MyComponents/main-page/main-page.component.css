@@ -107,12 +107,12 @@
   border-color:var(--primary);
 }
 
-.btn-secondary{
+.btn-primary:hover{
   background-color:var(--secondary);
   border-color: var(--secondary);
 }
 
-.btn-primary:hover{
+.btn-secondary{
   background-color:var(--secondary);
   border-color: var(--secondary);
 }
@@ -122,10 +122,22 @@
   border-color:var(--primary);
 }
 
+.btn-light{
+  color: var(--dark);
+  background-color: rgba(229, 221, 240, 0.918);
+  padding:12px 30px ;
+}
+
+.btn-light:hover{
+  color: #FFFFFF;
+  background-color: var(--secondary);
+  border-color: #EF8829;
+}
+
 .slideInDown{
   color: var(--dark);
   font-family: 'Lora';
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -187,6 +199,42 @@
   border: #EF8829;
   color: var(--light) !important;
 }
+
+/** Deal */
+
+.bg-deal{
+  background: url(../../../assets/Deal/bg3.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.lg-box{
+  display:flex;
+  align-items: center;
+}
+
+.lg-box .sm-box{
+  width: 90px;
+  background-color: var(--light);
+  border-radius: 7px;
+  box-shadow:  -4px 4px  var(--secondary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.lg-box .sm-box .num{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.lg-box .sm-box .time{
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
 
 /** Products  **/
 .bg-product{background: url(../../../assets/products/bg1.jpg) center center no-repeat;
@@ -395,17 +443,65 @@
     }
 }
 
+/* * Email section */
+.bg-Email{
+  background: url(../../../assets/Email/bg2.jpg) center center no-repeat;
+  background-size: cover;
+}
 
 
+.box-Email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.Email{
+  width: 400px;
+  outline: none !important;
+}
 
+.Email:focus, .Email:hover, .Email:active{
+  border: none !important;
+}
 
+.email-Part{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
 
+.fa-envelope{
+  font-size: 18px;
+}
+.de-active{
+  display: none;
+}
+@media (max-width:768px) {
+  .active{
+    display: none !important;
+  }
 
+  .de-active{
+    display: initial;
+  }
+}
 
+/* * blog section */
 
+.bg-blog{
+  background: url(../../../assets/blog/bg10.jpg) center center no-repeat;
+  background-size: cover;
+}
 
+.blog-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
-
-
-
+@media (max-width:1200px) {
+  .blog-img{
+  }
+}
