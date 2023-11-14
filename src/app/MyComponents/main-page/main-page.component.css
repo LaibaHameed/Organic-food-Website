@@ -487,6 +487,12 @@
   }
 }
 
+@media (max-width:502px) {
+  .fa-envelope{
+    display: none !important;
+  }
+}
+
 /* * blog section */
 
 .bg-blog{
